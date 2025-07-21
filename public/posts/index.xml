@@ -16,18 +16,18 @@
       <description>&lt;p&gt;Das ist ein Anfang. :)&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
+      <title>Hello World</title>
       <link>http://localhost:1313/posts/placeholder-post-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 21 Jul 2025 23:02:55 +0200</pubDate>
       <guid>http://localhost:1313/posts/placeholder-post-1/</guid>
-      <description></description>
+      <description>&lt;p&gt;placeholder 1&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
+      <title>Hello World</title>
       <link>http://localhost:1313/posts/placeholder-post-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 21 Jul 2025 23:02:55 +0200</pubDate>
       <guid>http://localhost:1313/posts/placeholder-post-2/</guid>
-      <description></description>
+      <description>&lt;p&gt;placehodler 2&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

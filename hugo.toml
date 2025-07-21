@@ -7,14 +7,6 @@ defaultContentLanguageInSubdir = false
 
 pagination.pagerSize = 15
 
-[params]
-  ShowReadingTime = true
-  # ShowToc = true
-  defaultTheme = "auto"
-  ShowCodeCopyButtons = true
-  ShowShareButtons = true
-  ShareButtons = ["reddit", "email", "copy", "linkedin"]
-
 
 [languages]
   [languages.de]
@@ -27,54 +19,14 @@ pagination.pagerSize = 15
     languageCode = 'en'
     weight = 2
 
-  [[languages.de.menu.main]]
-    identifier = "home"
-    name = "Start"
-    url = "/de/"
-    weight = 1
-
-  [[languages.de.menu.main]]
-    identifier = "posts"
-    name = "Beiträge"
-    url = "/de/posts/"
-    weight = 2
-
-  [[languages.de.menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/de/tags/"
-    weight = 3
-
-  [[languages.de.menu.main]]
-  identifier = "impressum"
-  name = "Impressum"
-  url = "/de/impressum/"
-  weight = 4
-
-  [[languages.en.menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/en/"
-    weight = 1
-
-  [[languages.en.menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/en/posts/"
-    weight = 2
-
-  [[languages.en.menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/en/tags/"
-    weight = 3
-
-  [[languages.en.menu.main]]
-  identifier = "impressum"
-  name = "Imprint"
-  url = "/en/impressum/"
-  weight = 4
-
 [taxonomies]
   tag = "tags"
   category = "categories"
+
+[params]
+  ShowReadingTime = true
+  # ShowToc = true
+  defaultTheme = "auto"
+  ShowCodeCopyButtons = true
+  ShowShareButtons = true
+  ShareButtons = ["reddit", "email", "copy", "linkedin"]
