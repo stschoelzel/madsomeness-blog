@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on madsomeness</title>
+    <link>http://localhost:1313/en-us/categories/</link>
+    <description>Recent content in Categories on madsomeness</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 21 Jul 2025 16:30:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/en-us/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ttrpg</title>
+      <link>http://localhost:1313/en-us/categories/ttrpg/</link>
+      <pubDate>Mon, 21 Jul 2025 16:30:00 +0200</pubDate>
+      <guid>http://localhost:1313/en-us/categories/ttrpg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gamereport</title>
+      <link>http://localhost:1313/en-us/categories/gamereport/</link>
+      <pubDate>Mon, 21 Jul 2025 14:30:00 +0200</pubDate>
+      <guid>http://localhost:1313/en-us/categories/gamereport/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Review</title>
+      <link>http://localhost:1313/en-us/categories/review/</link>
+      <pubDate>Mon, 21 Jul 2025 14:30:00 +0200</pubDate>
+      <guid>http://localhost:1313/en-us/categories/review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solo-Rpg</title>
+      <link>http://localhost:1313/en-us/categories/solo-rpg/</link>
+      <pubDate>Mon, 21 Jul 2025 14:30:00 +0200</pubDate>
+      <guid>http://localhost:1313/en-us/categories/solo-rpg/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
