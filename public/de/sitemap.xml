@@ -3,6 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-21T23:02:55+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -12,6 +13,32 @@
                 rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-07-21-hello-world/</loc>
+    <lastmod>2025-07-21T23:02:55+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/2025-07-21-hello-world/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/posts/2025-07-21-hello-world/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-07-21T23:02:55+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/posts/"
                 />
   </url><url>
     <loc>http://localhost:1313/impressum/</loc>
@@ -27,64 +54,8 @@
                 />
   </url><url>
     <loc>http://localhost:1313/posts/placeholder-post-1/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/posts/placeholder-post-1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/posts/placeholder-post-1/"
-                />
   </url><url>
     <loc>http://localhost:1313/posts/placeholder-post-2/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/posts/placeholder-post-2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/posts/placeholder-post-2/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/posts/placeholder-post-3/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/posts/placeholder-post-3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/posts/placeholder-post-3/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/posts/placeholder-post-4/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/posts/placeholder-post-4/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/posts/placeholder-post-4/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/posts/placeholder-post-5/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/posts/placeholder-post-5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/posts/placeholder-post-5/"
-                />
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
@@ -96,18 +67,6 @@
                 rel="alternate"
                 hreflang="de"
                 href="http://localhost:1313/categories/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/posts/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
