@@ -1,20 +1,12 @@
-# --- Basics ---
-# This section defines the fundamental settings of the site, such as its base URL, language, title, and theme.
-
 baseURL = 'https://madsomeness.de/'
 title = 'madsomeness'
 theme = "PaperMod"
 
-
-# --- Pagination ---
-# Controls the number of items displayed per page.
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = true
+disableDefaultLanguageRedirect = false
 
 pagination.pagerSize = 15
-
-
-# --- Parameters ---
-# Configures additional features like reading time, share buttons, and table of contents.
-
 
 [params]
   ShowReadingTime = true
@@ -24,47 +16,36 @@ pagination.pagerSize = 15
   ShowShareButtons = true
   ShareButtons = ["reddit", "email", "copy", "linkedin"]
 
-
-
-# --- Language Settings ---
-# Defines language-specific configurations, including menus and their order.
-
-# Multilingual configuration for Hugo
-
-# Default language settings
-defaultContentLanguage = "de"  # Set English as the default language
-defaultContentLanguageInSubdir = true  # Place default language content in its own subdirectory
-
-
-
 [languages]
   [languages.de]
-    contentDir = "content/de"  # Directory for German content
-    languageName = "Deutsch"  # Display name for German
-    weight = 1  # Priority of German in the language switcher
+    contentDir = "content/de"
+    languageName = "Deutsch"
+    languageCode = 'de'
+    weight = 1
 
   [languages.en]
-    contentDir = "content/en"  # Directory for English content
-    languageName = "English"  # Display name for English
-    weight = 2  # Priority of English in the language switcher
+    contentDir = "content/en"
+    languageName = "English"
+    languageCode = 'en'
+    weight = 2
 
   [[languages.de.menu.main]]
     identifier = "home"
-    name = "Start" 
-    url = "/" 
+    name = "Start"
+    url = "/de/"
     weight = 1
 
   [[languages.de.menu.main]]
     identifier = "posts"
     name = "Beiträge"
-    url = "/posts/"
+    url = "/de/posts/"
     weight = 2
 
   [[languages.de.menu.main]]
-  identifier = "tags"
-  name = "Tags"
-  url = "/tags/"
-  weight = 3
+    identifier = "tags"
+    name = "Tags"
+    url = "/de/tags/"
+    weight = 3
 
   [[languages.en.menu.main]]
     identifier = "home"
@@ -79,19 +60,11 @@ defaultContentLanguageInSubdir = true  # Place default language content in its o
     weight = 2
 
   [[languages.en.menu.main]]
-  identifier = "tags"
-  name = "Tags"
-  url = "/en/tags/"
-  weight = 3
-
-
-# --- Taxonomies ---
-# Specifies how content is categorized and tagged.
+    identifier = "tags"
+    name = "Tags"
+    url = "/en/tags/"
+    weight = 3
 
 [taxonomies]
-tag = "tags"
-category = "categories"
-
-
-
-
+  tag = "tags"
+  category = "categories"

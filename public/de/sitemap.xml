@@ -2,25 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/de/categories/</loc>
-    <lastmod>2025-07-21T16:30:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/categories/"
-                />
-  </url><url>
     <loc>http://localhost:1313/de/</loc>
     <lastmod>2025-07-21T16:30:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="http://localhost:1313/en/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -28,12 +15,25 @@
                 href="http://localhost:1313/de/"
                 />
   </url><url>
+    <loc>http://localhost:1313/de/categories/</loc>
+    <lastmod>2025-07-21T16:30:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/categories/"
+                />
+  </url><url>
     <loc>http://localhost:1313/de/posts/</loc>
     <lastmod>2025-07-21T16:30:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/"
+                href="http://localhost:1313/en/posts/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -52,7 +52,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -65,7 +65,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/ttrpg/"
+                href="http://localhost:1313/en/categories/ttrpg/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -78,7 +78,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/placeholder-post-5/"
+                href="http://localhost:1313/en/posts/placeholder-post-5/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -91,7 +91,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/placeholder-post-2/"
+                href="http://localhost:1313/en/posts/placeholder-post-2/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -104,7 +104,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/placeholder-post-1/"
+                href="http://localhost:1313/en/posts/placeholder-post-1/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -120,7 +120,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/solo-rpg/"
+                href="http://localhost:1313/en/categories/solo-rpg/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -133,7 +133,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/solo-rpg/"
+                href="http://localhost:1313/en/tags/solo-rpg/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -149,7 +149,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/placeholder-post-3/"
+                href="http://localhost:1313/en/posts/placeholder-post-3/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -162,7 +162,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/ttrpg/"
+                href="http://localhost:1313/en/tags/ttrpg/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -175,7 +175,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/placeholder-post-4/"
+                href="http://localhost:1313/en/posts/placeholder-post-4/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -187,7 +187,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/impressum/"
+                href="http://localhost:1313/en/impressum/"
                 />
     <xhtml:link
                 rel="alternate"
