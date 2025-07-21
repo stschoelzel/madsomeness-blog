@@ -9,11 +9,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v4
+        # use the latest v3.x of peaceiris/actions-hugo
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
 
@@ -21,7 +23,8 @@ jobs:
         run: hugo --minify
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v5
+        # use the latest v3.x of peaceiris/actions-gh-pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
