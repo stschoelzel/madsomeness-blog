@@ -1,3 +1,44 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://madsomeness.de/'
+languageCode = 'de'
+title = 'madsomeness'
+theme = "PaperMod"
+
+paginate = 20
+
+[params]
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowToc = true
+  ShowCodeCopyButtons = true
+
+[languages.de]
+  languageName = "Deutsch"
+  weight = 1
+
+  [[languages.de.menu.main]]
+    identifier = "home"
+    name = "Start"
+    url = "/"
+    weight = 1
+
+  [[languages.de.menu.main]]
+    identifier = "posts"
+    name = "Beiträge"
+    url = "/posts/"
+    weight = 2
+
+[languages.en]
+  languageName = "English"
+  weight = 2
+
+  [[languages.en.menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/en/"
+    weight = 1
+
+  [[languages.en.menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/en/posts/"
+    weight = 2
