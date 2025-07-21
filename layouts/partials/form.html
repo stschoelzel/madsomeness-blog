@@ -1,0 +1,26 @@
+<form id="comment-form" action="https://api.staticman.net/v3/entry/github/stschoelzel/madsomeness-blog/master/comments" method="POST">
+    <input type="hidden" name="options[slug]" value="{{ .File.BaseFileName }}">
+    <input type="hidden" name="options[frontmatter][title]" value="{{ .Title }}">
+
+    <label>
+        Name (required)
+        <input type="text" name="fields[name]" required>
+    </label>
+
+    <label>
+        E-Mail (wird nie veröffentlicht)
+        <input type="email" name="fields[email]" required>
+    </label>
+
+    <label>
+        Website
+        <input type="url" name="fields[website]">
+    </label>
+
+    <label>
+        Kommentar (required)
+        <textarea name="fields[message]" rows="4" required></textarea>
+    </label>
+
+    <button type="submit">Kommentar abschicken</button>
+</form>

@@ -16,6 +16,9 @@ pagination.pagerSize = 15
   ShowShareButtons = true
   ShareButtons = ["reddit", "email", "copy", "linkedin"]
 
+[params.staticman]
+enable = true
+
 [languages]
   [languages.de]
     contentDir = "content/de"

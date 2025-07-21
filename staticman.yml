@@ -1,0 +1,21 @@
+# staticman.yml
+
+comments:
+  # Public Staticman-Endpoint mit deinem Repo-Pfad
+  endpoint: https://api.staticman.net/v3/entry/github/stschoelzel/madsomeness-blog/master/comments
+
+  # Branch, in dem Kommentar-PRs angelegt werden
+  branch: main
+
+  # Pfad im Repo, wo Kommentare als Daten abgelegt werden
+  path: "data/comments"
+
+  # Felder, die dein Formular übermittelt
+  allowedFields: [name, email, website, message]
+
+  # Soll vor Veröffentlichung geprüft werden?
+  moderation: true
+
+  # Bestimme, welche Felder öffentlich sichtbar sind
+  # (z.B. E-Mail nicht anzeigen)
+  publicFields: [name, message, website]

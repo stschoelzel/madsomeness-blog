@@ -1,0 +1,16 @@
+{{ if .Site.Params.staticman.enable }}
+{{ partial "staticman/form.html" . }}
+
+<section id="comments">
+    {{ $comments := (getJSON (printf "/data/comments/%s.json" .File.BaseFileName)) }}
+    {{ range $comments }}
+    <article class="comment">
+        <p><strong>{{ .name }}</strong> sagt:</p>
+        <p>{{ .message }}</p>
+        {{ if .website }}
+        <p><a href="{{ .website }}" target="_blank">Website</a></p>
+        {{ end }}
+    </article>
+    {{ end }}
+</section>
+{{ end }}
