@@ -1,6 +1,6 @@
 ---
 title: "Exploring the Depths of Solo RPGs"
-date: 2025-07-21T00:00:00Z
+date: "2025-07-21T14:30:00+02:00"
 categories: ["ttrpg"]
 tags: ["solo-rpg", "gamereport"]
 image: "/images/placeholder1.jpg"

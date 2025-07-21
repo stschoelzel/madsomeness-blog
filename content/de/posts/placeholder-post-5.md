@@ -1,0 +1,10 @@
+---
+title: "TTRPG-Spotlight: 'Blades in the Dark'"
+date: "2025-07-21T14:30:00+02:00"
+categories: ["ttrpg"]
+tags: ["rezension", "spielbericht"]
+---
+
+# TTRPG-Spotlight: "Blades in the Dark"
+
+"Blades in the Dark" ist ein herausragendes TTRPG, das Spieler in eine düstere, industrielle Fantasy-Welt eintauchen lässt. Dieser Beitrag hebt die innovativen Mechaniken des Spiels hervor und erklärt, warum es zu einem Favoriten unter RPG-Enthusiasten geworden ist.

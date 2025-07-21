@@ -1,12 +1,10 @@
 ---
 title: "A Quick Review of 'The Quiet Year'"
-date: 2025-07-21T00:00:00Z
+date: "2025-07-21T14:30:00+02:00"
 categories: ["solo-rpg"]
 tags: ["review", "gamereport"]
 image: "/images/placeholder2.jpg"
 ---
-
-This is a placeholder post for the Solo RPG category. Stay tuned for more content!
 
 # A Quick Review of "The Quiet Year"
 

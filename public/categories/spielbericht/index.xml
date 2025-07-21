@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Spielbericht on madsomeness</title>
+    <link>http://localhost:1313/categories/spielbericht/</link>
+    <description>Recent content in Spielbericht on madsomeness</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 21 Jul 2025 14:30:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/spielbericht/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spielbericht: Eine Reise durch die Einöde</title>
+      <link>http://localhost:1313/de/posts/placeholder-post-3/</link>
+      <pubDate>Mon, 21 Jul 2025 14:30:00 +0200</pubDate>
+      <guid>http://localhost:1313/de/posts/placeholder-post-3/</guid>
+      <description>&lt;h1 id=&#34;spielbericht-eine-reise-durch-die-einöde&#34;&gt;Spielbericht: Eine Reise durch die Einöde&lt;/h1&gt;
+&lt;p&gt;Letztes Wochenende habe ich ein Solo-RPG-Abenteuer in einer postapokalyptischen Einöde unternommen. Dieser Spielbericht erzählt die Höhepunkte meiner Reise, vom Sammeln von Ressourcen bis hin zu Begegnungen mit mysteriösen Überlebenden. Lesen Sie weiter, um zu erfahren, wie sich die Geschichte entwickelt hat!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,11 +1,9 @@
 ---
 title: "Why Reviews Matter in the RPG Community"
-date: 2025-07-21T00:00:00Z
+date: "2025-07-21T14:30:00+02:00"
 categories: ["review"]
 tags: ["solo-rpg", "ttrpg"]
 ---
-
-This is a placeholder post for the Review category. Stay tuned for more content!
 
 # Why Reviews Matter in the RPG Community
 

@@ -1,12 +1,10 @@
 ---
 title: "Game Report: A Journey Through the Wasteland"
-date: 2025-07-21T00:00:00Z
+date: "2025-07-21T14:30:00+02:00"
 categories: ["gamereport"]
 tags: ["ttrpg", "review"]
 image: "/images/placeholder3.jpg"
 ---
-
-This is a placeholder post for the Game Report category. Stay tuned for more content!
 
 # Game Report: A Journey Through the Wasteland
 
