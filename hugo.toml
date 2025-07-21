@@ -2,7 +2,6 @@
 # This section defines the fundamental settings of the site, such as its base URL, language, title, and theme.
 
 baseURL = 'https://madsomeness.de/'
-languageCode = 'de'
 title = 'madsomeness'
 theme = "PaperMod"
 
@@ -26,6 +25,14 @@ pagination.pagerSize = 15
 
 # --- Language Settings ---
 # Defines language-specific configurations, including menus and their order.
+
+# Multilingual configuration for Hugo
+
+# Default language settings
+defaultContentLanguage = "de"  # Set English as the default language
+defaultContentLanguageInSubdir = true  # Place default language content in its own subdirectory
+
+
 
 [languages]
   [languages.de]
@@ -83,10 +90,5 @@ tag = "tags"
 category = "categories"
 
 
-# Multilingual configuration for Hugo
-
-# Default language settings
-defaultContentLanguage = "de"  # Set English as the default language
-defaultContentLanguageInSubdir = true  # Place default language content in its own subdirectory
 
 

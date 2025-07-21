@@ -182,29 +182,5 @@
                 hreflang="de"
                 href="http://localhost:1313/de/posts/placeholder-post-4/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/de/de/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/de/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/de/true/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/true/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/true/"
-                />
   </url>
 </urlset>
