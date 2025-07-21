@@ -3,6 +3,7 @@ title: "Warum Rezensionen in der RPG-Community wichtig sind"
 date: "2025-07-21T14:30:00+02:00"
 categories: ["rezension"]
 tags: ["solo-rpg", "ttrpg"]
+slug: "placeholder-post-4"
 ---
 
 # Warum Rezensionen in der RPG-Community wichtig sind

@@ -4,6 +4,7 @@ date: "2025-07-21T14:30:00+02:00"
 categories: ["ttrpg"]
 tags: ["solo-rpg", "spielbericht"]
 image: "/images/placeholder1.jpg"
+slug: "placeholder-post-1"
 ---
 
 # Erkunden der Tiefen von Solo-RPGs

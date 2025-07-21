@@ -18,9 +18,12 @@ pagination.pagerSize = 15
 
 [params]
   ShowReadingTime = true
-  ShowShareButtons = true
-  ShowToc = true
+  # ShowToc = true
+  defaultTheme = "auto"
   ShowCodeCopyButtons = true
+  ShowShareButtons = true
+  ShareButtons = ["reddit", "email", "copy", "linkedin"]
+
 
 
 # --- Language Settings ---

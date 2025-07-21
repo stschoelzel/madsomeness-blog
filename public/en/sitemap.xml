@@ -2,6 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-07-21T16:30:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/gamereport/</loc>
+    <lastmod>2025-07-21T16:30:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-21T16:30:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/review/</loc>
+    <lastmod>2025-07-21T16:30:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-07-21T16:30:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/categories/ttrpg/</loc>
+    <lastmod>2025-07-21T16:30:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/categories/ttrpg/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/categories/ttrpg/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/placeholder-post-5/</loc>
+    <lastmod>2025-07-21T16:30:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/posts/placeholder-post-5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/posts/placeholder-post-5/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-07-21T16:30:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/posts/"
+                />
+  </url><url>
     <loc>http://localhost:1313/posts/placeholder-post-2/</loc>
     <lastmod>2025-07-21T14:30:00+02:00</lastmod>
     <xhtml:link
@@ -13,19 +97,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/posts/placeholder-post-2/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-07-21T14:30:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/categories/"
                 />
   </url><url>
     <loc>http://localhost:1313/posts/placeholder-post-1/</loc>
@@ -57,26 +128,7 @@
     <loc>http://localhost:1313/categories/gamereport/</loc>
     <lastmod>2025-07-21T14:30:00+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/gamereport/</loc>
-    <lastmod>2025-07-21T14:30:00+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-07-21T14:30:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/"
-                />
-  </url><url>
     <loc>http://localhost:1313/categories/review/</loc>
-    <lastmod>2025-07-21T14:30:00+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/review/</loc>
     <lastmod>2025-07-21T14:30:00+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/solo-rpg/</loc>
@@ -105,32 +157,6 @@
                 href="http://localhost:1313/tags/solo-rpg/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-07-21T14:30:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/ttrpg/</loc>
-    <lastmod>2025-07-21T14:30:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/categories/ttrpg/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/categories/ttrpg/"
-                />
-  </url><url>
     <loc>http://localhost:1313/tags/ttrpg/</loc>
     <lastmod>2025-07-21T14:30:00+02:00</lastmod>
     <xhtml:link
@@ -142,32 +168,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/tags/ttrpg/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/posts/placeholder-post-5/</loc>
-    <lastmod>2025-07-21T14:30:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/posts/placeholder-post-5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/posts/placeholder-post-5/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-07-21T14:30:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/posts/"
                 />
   </url><url>
     <loc>http://localhost:1313/posts/placeholder-post-4/</loc>

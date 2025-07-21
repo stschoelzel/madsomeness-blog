@@ -4,6 +4,7 @@ date: "2025-07-21T14:30:00+02:00"
 categories: ["solo-rpg"]
 tags: ["rezension", "spielbericht"]
 image: "/images/placeholder2.jpg"
+slug: "placeholder-post-2"
 ---
 
 # Eine kurze Rezension von "The Quiet Year"

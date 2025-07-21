@@ -1,8 +1,9 @@
 ---
 title: "TTRPG Spotlight: 'Blades in the Dark'"
-date: "2025-07-21T14:30:00+02:00"
+date: "2025-07-21T16:30:00+02:00"
 categories: ["ttrpg"]
 tags: ["review", "gamereport"]
+slug: "placeholder-post-5"
 ---
 
 # TTRPG Spotlight: "Blades in the Dark"

@@ -4,6 +4,7 @@ date: "2025-07-21T14:30:00+02:00"
 categories: ["gamereport"]
 tags: ["ttrpg", "review"]
 image: "/images/placeholder3.jpg"
+slug: "placeholder-post-3"
 ---
 
 # Game Report: A Journey Through the Wasteland
