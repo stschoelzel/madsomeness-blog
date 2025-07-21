@@ -3,8 +3,7 @@ title = 'madsomeness'
 theme = "PaperMod"
 
 defaultContentLanguage = "de"
-defaultContentLanguageInSubdir = true
-disableDefaultLanguageRedirect = false
+defaultContentLanguageInSubdir = false
 
 pagination.pagerSize = 15
 
@@ -16,8 +15,6 @@ pagination.pagerSize = 15
   ShowShareButtons = true
   ShareButtons = ["reddit", "email", "copy", "linkedin"]
 
-[params.staticman]
-enable = true
 
 [languages]
   [languages.de]

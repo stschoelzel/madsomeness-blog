@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/de/</loc>
+    <loc>http://localhost:1313/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -11,10 +11,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/"
+                href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/impressum/</loc>
+    <loc>http://localhost:1313/impressum/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -23,10 +23,70 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/impressum/"
+                href="http://localhost:1313/impressum/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/categories/</loc>
+    <loc>http://localhost:1313/posts/placeholder-post-1/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/placeholder-post-1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/posts/placeholder-post-1/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/placeholder-post-2/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/placeholder-post-2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/posts/placeholder-post-2/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/placeholder-post-3/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/placeholder-post-3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/posts/placeholder-post-3/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/placeholder-post-4/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/placeholder-post-4/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/posts/placeholder-post-4/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/placeholder-post-5/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/placeholder-post-5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/posts/placeholder-post-5/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -35,10 +95,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/categories/"
+                href="http://localhost:1313/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -47,42 +107,10 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/posts/"
+                href="http://localhost:1313/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/de/categories/rezension/</loc>
-  </url><url>
-    <loc>http://localhost:1313/de/tags/rezension/</loc>
-  </url><url>
-    <loc>http://localhost:1313/de/categories/solo-rpg/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/categories/solo-rpg/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/categories/solo-rpg/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/de/tags/solo-rpg/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/solo-rpg/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/tags/solo-rpg/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/de/categories/spielbericht/</loc>
-  </url><url>
-    <loc>http://localhost:1313/de/tags/spielbericht/</loc>
-  </url><url>
-    <loc>http://localhost:1313/de/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -91,31 +119,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/tags/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/de/categories/ttrpg/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/categories/ttrpg/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/categories/ttrpg/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/de/tags/ttrpg/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/ttrpg/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/tags/ttrpg/"
+                href="http://localhost:1313/tags/"
                 />
   </url>
 </urlset>

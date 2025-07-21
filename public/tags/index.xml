@@ -5,36 +5,7 @@
     <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on madsomeness</description>
     <generator>Hugo -- 0.148.1</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 21 Jul 2025 16:30:00 +0200</lastBuildDate>
+    <language>de</language>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Gamereport</title>
-      <link>http://localhost:1313/tags/gamereport/</link>
-      <pubDate>Mon, 21 Jul 2025 16:30:00 +0200</pubDate>
-      <guid>http://localhost:1313/tags/gamereport/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Review</title>
-      <link>http://localhost:1313/tags/review/</link>
-      <pubDate>Mon, 21 Jul 2025 16:30:00 +0200</pubDate>
-      <guid>http://localhost:1313/tags/review/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Solo-Rpg</title>
-      <link>http://localhost:1313/tags/solo-rpg/</link>
-      <pubDate>Mon, 21 Jul 2025 14:30:00 +0200</pubDate>
-      <guid>http://localhost:1313/tags/solo-rpg/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ttrpg</title>
-      <link>http://localhost:1313/tags/ttrpg/</link>
-      <pubDate>Mon, 21 Jul 2025 14:30:00 +0200</pubDate>
-      <guid>http://localhost:1313/tags/ttrpg/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>
