@@ -1,9 +1,21 @@
+# --- Basics ---
+# This section defines the fundamental settings of the site, such as its base URL, language, title, and theme.
+
 baseURL = 'https://madsomeness.de/'
 languageCode = 'de'
 title = 'madsomeness'
 theme = "PaperMod"
 
+
+# --- Pagination ---
+# Controls the number of items displayed per page.
+
 pagination.pagerSize = 10
+
+
+# --- Parameters ---
+# Configures additional features like reading time, share buttons, and table of contents.
+
 
 [params]
   ShowReadingTime = true
@@ -11,14 +23,17 @@ pagination.pagerSize = 10
   ShowToc = true
   ShowCodeCopyButtons = true
 
+
+# --- Language Settings ---
+# Defines language-specific configurations, including menus and their order.
+
 [languages.de]
   languageName = "Deutsch"
   weight = 1
-
   [[languages.de.menu.main]]
     identifier = "home"
-    name = "Start"
-    url = "/"
+    name = "Start" 
+    url = "/" 
     weight = 1
 
   [[languages.de.menu.main]]
@@ -42,3 +57,13 @@ pagination.pagerSize = 10
     name = "Posts"
     url = "/en/posts/"
     weight = 2
+
+
+# --- Taxonomies ---
+# Specifies how content is categorized and tagged.
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+

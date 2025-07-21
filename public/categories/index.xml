@@ -6,6 +6,35 @@
     <description>Recent content in Categories on madsomeness</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en</language>
+    <lastBuildDate>Mon, 21 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gamereport</title>
+      <link>http://localhost:1313/categories/gamereport/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/gamereport/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Review</title>
+      <link>http://localhost:1313/categories/review/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solo-Rpg</title>
+      <link>http://localhost:1313/categories/solo-rpg/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/solo-rpg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ttrpg</title>
+      <link>http://localhost:1313/categories/ttrpg/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/ttrpg/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
