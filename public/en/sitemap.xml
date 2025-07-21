@@ -31,6 +31,19 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-07-21T16:30:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/posts/"
+                />
+  </url><url>
     <loc>http://localhost:1313/tags/review/</loc>
     <lastmod>2025-07-21T16:30:00+02:00</lastmod>
   </url><url>
@@ -71,19 +84,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/posts/placeholder-post-5/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-07-21T16:30:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/posts/"
                 />
   </url><url>
     <loc>http://localhost:1313/posts/placeholder-post-2/</loc>
@@ -181,6 +181,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/posts/placeholder-post-4/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/impressum/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/impressum/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/impressum/"
                 />
   </url>
 </urlset>

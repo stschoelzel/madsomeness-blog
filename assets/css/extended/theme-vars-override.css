@@ -13,8 +13,9 @@
     --hljs-bg: #f7f7f7;
     --code-bg: #fdf6e3;
     --border: #ffbe0b44;
-    /* soft yellow border */ }order: #e2cbb7;
+    /* soft yellow border */
 }
+
 .dark {
     --theme: #121212;
     /* almost-black, easier on eyes */
