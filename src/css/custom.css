@@ -1,0 +1,87 @@
+/* custom.css for Docusaurus integrating custom fonts and colors */
+
+/* 1. Font faces */
+@font-face {
+  font-family: 'Karrik';
+  src: url('/fonts/Karrik-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Karrik';
+  src: url('/fonts/Karrik-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Resistance';
+  src: url('/fonts/resistance_generale-webfont.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Illinois Mono';
+  src: url('/fonts/Illinois_Mono_Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 2. Custom CSS variables for fonts and palette */
+:root {
+  /* Font families */
+  --font-primary: 'Karrik', sans-serif;
+  --font-secondary: 'Resistance', sans-serif;
+  --font-mono: 'Illinois Mono', monospace;
+
+  /* Custom palette */
+  --primary:   #FF006E;
+  --secondary: #3A86FF;
+  --content:   #212121;
+}
+
+/* Dark mode palette overrides */
+[data-theme='dark'] {
+  --primary:   #FF66A3;
+  --secondary: #5C9EFF;
+  --content:   #F1F1F1;
+}
+
+/* 3. Apply base typography */
+body {
+  font-family: var(--font-primary);
+  color: var(--content);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary);
+}
+code, pre {
+  font-family: var(--font-mono);
+  font-size: 95%;
+}
+
+/* 4. Override Infima variables with custom palette */
+:root {
+  --ifm-color-primary:       var(--primary);
+  --ifm-color-primary-light: var(--primary);
+  --ifm-color-primary-dark:  var(--primary);
+  --ifm-color-secondary:     var(--secondary);
+  --ifm-color-content:       var(--content);
+  --ifm-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary:       var(--primary);
+  --ifm-color-primary-light: var(--primary);
+  --ifm-color-primary-dark:  var(--primary);
+  --ifm-color-secondary:     var(--secondary);
+  --ifm-color-content:       var(--content);
+  --ifm-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* 5. Any additional global tweaks */
+img {
+  max-width: 100%;
+}
+
+
+
