@@ -1,27 +1,26 @@
+
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = false
+disableDefaultLanguageRedirect = true
+
 baseURL = 'https://madsomeness.de/'
 title = 'madsomeness'
 theme = "PaperMod"
 
-defaultContentLanguage = "de"
-defaultContentLanguageInSubdir = false
 
 pagination.pagerSize = 15
 
 
 [languages]
   [languages.de]
-    languageName = "Deutsch"
+    languageName = 'Deutsch'
     languageCode = 'de'
     weight = 1
-
   [languages.en]
-    languageName = "English"
+    languageName = '🇬🇧English'
     languageCode = 'en'
     weight = 2
 
-[taxonomies]
-  tag = "tags"
-  category = "categories"
 
 [params]
   ShowReadingTime = true
