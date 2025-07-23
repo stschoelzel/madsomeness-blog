@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'madsomeness',
   tagline: 'so mad it\'s awesome',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/madfavicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -82,9 +82,9 @@ const config: Config = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'tiersSidebar',
           position: 'left',
-          label: 'Archieve',
+          label: 'Tier Lists',
         },
       ],
     },
