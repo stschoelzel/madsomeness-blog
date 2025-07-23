@@ -82,7 +82,7 @@ const config: Config = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: 'docSidebar',
-          sidebarId: 'tiersSidebar',
+          sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Tier Lists',
         },
