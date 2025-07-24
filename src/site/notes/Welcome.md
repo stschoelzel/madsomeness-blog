@@ -1,6 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/welcome/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/welcome/","tags":["gardenEntry"],"created":"2025-07-24T10:34:15.617+02:00"}
 ---
+
+# Headline
 
 This is your new *vault*.
 
