@@ -1,0 +1,9 @@
+{
+  "name": "madsomness",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Light/Dark Mode mit Karrik, Resistance & Illinois Mono",
+  "author": "DeinName",
+  "authorUrl": "https://github.com/DeinUser",
+  "isTheme": true
+}

@@ -1,0 +1,201 @@
+/* ===========================================================================
+   theme.css for madsomness Obsidian Theme
+   Standalone Light & Dark Mode mit festen Defaults und optionalem
+   Style Settings Plugin–Support
+   =========================================================================== */
+
+/* ──────────────────────────────────────────────────────────────────────────
+   0. Feste Defaults (ohne Style Settings Plugin)
+   ────────────────────────────────────────────────────────────────────────── */
+:root {
+  /* Fonts */
+  --font-primary:   'Karrik', sans-serif;
+  --font-secondary: 'Resistance', sans-serif;
+  --font-mono:      'Illinois Mono', monospace;
+
+  /* Light Mode Farben */
+  --color-primary-light:   #FF006E;  /* Akzent (Headings, Buttons, Links) */
+  --color-secondary-light: #3A86FF;  /* Sekundär-Akzent (Hover, Markierungen) */
+  --color-content-light:   #212121;  /* Fließtext */
+
+  /* Dark Mode Farben */
+  --color-primary-dark:   #FF66A3;
+  --color-secondary-dark: #5C9EFF;
+  --color-content-dark:   #F1F1F1;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   0b. Dark Mode Overrides für Defaults
+   ────────────────────────────────────────────────────────────────────────── */
+body.theme-dark {
+  /* Verknüpfe die Light-Mode-Variablen auf die Dark-Mode-Farben um */
+  --color-primary-light:   var(--color-primary-dark);
+  --color-secondary-light: var(--color-secondary-dark);
+  --color-content-light:   var(--color-content-dark);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   @settings Block für Style Settings Plugin (optional)
+   ────────────────────────────────────────────────────────────────────────── */
+/* @settings
+name: madsomness Theme
+id: madsomness-theme
+settings:
+  - id: fonts-heading
+    title: 🔤 Schriftarten
+    type: heading
+    level: 2
+
+  - id: font-primary
+    title: Fließtext-Font
+    description: Font für normalen Text (Body & Preview)
+    type: variable-text
+    default: 'Karrik'
+    quotes: true
+
+  - id: font-secondary
+    title: Überschriften-Font
+    description: Font für alle Heading-Levels
+    type: variable-text
+    default: 'Resistance'
+    quotes: true
+
+  - id: font-mono
+    title: Monospace-Font
+    description: Font für Code-Blöcke und Inline-Code
+    type: variable-text
+    default: 'Illinois Mono'
+    quotes: true
+
+  - id: colors-heading
+    title: 🎨 Farbpalette
+    type: heading
+    level: 2
+
+  - id: color-primary
+    title: Primärfarbe
+    description: Hauptakzent für Links, Headings, Buttons
+    type: variable-themed-color
+    format: hex
+    default-light: '#FF006E'
+    default-dark:  '#FF66A3'
+
+  - id: color-secondary
+    title: Sekundärfarbe
+    description: Sekundär-Akzent für Hover, Auszeichnungen
+    type: variable-themed-color
+    format: hex
+    default-light: '#3A86FF'
+    default-dark:  '#5C9EFF'
+
+  - id: color-content
+    title: Textfarbe
+    description: Farbe für normalen Fließtext
+    type: variable-themed-color
+    format: hex
+    default-light: '#212121'
+    default-dark:  '#F1F1F1'
+*/
+
+/* ──────────────────────────────────────────────────────────────────────────
+   1. Font-Faces zum Nachladen im Editor (CodeMirror)
+   ────────────────────────────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'Karrik';
+  src: url('fonts/Karrik-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Karrik';
+  src: url('fonts/Karrik-Italic.ttf') format('truetype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Resistance';
+  src: url('fonts/resistance_generale-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Illinois Mono';
+  src: url('fonts/Illinois_Mono_Regular.ttf') format('truetype');
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   2. CSS-Variablen Mapping
+   ────────────────────────────────────────────────────────────────────────── */
+:root {
+  /* Fonts */
+  --madsomness-font-primary:   var(--font-primary)   !important;
+  --madsomness-font-secondary: var(--font-secondary) !important;
+  --madsomness-font-mono:      var(--font-mono)      !important;
+
+  /* Farben (Light Mode) */
+  --madsomness-primary:   var(--color-primary-light)   !important;
+  --madsomness-secondary: var(--color-secondary-light) !important;
+  --madsomness-content:   var(--color-content-light)   !important;
+}
+/* Dark Mode Mapping */
+body.theme-dark {
+  --madsomness-primary:   var(--color-primary-light)   !important;
+  --madsomness-secondary: var(--color-secondary-light) !important;
+  --madsomness-content:   var(--color-content-light)   !important;
+}
+
+/* Infima Override für Code-Hervorhebung */
+:root {
+  --ifm-highlighted-code-line-bg: rgba(0,0,0,0.1) !important;
+}
+body.theme-dark {
+  --ifm-highlighted-code-line-bg: rgba(0,0,0,0.3) !important;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   3. Anwendung auf Obsidian UI & Editor
+   ────────────────────────────────────────────────────────────────────────── */
+/* Fließtext (Editor & Preview) */
+.markdown-source-view,
+.markdown-preview-view {
+  font-family: var(--madsomness-font-primary) !important;
+  color: var(--madsomness-content)         !important;
+  background-color: transparent          !important;
+}
+
+/* Überschriften (Preview + Editor) */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.cm-header-1, .cm-header-2, .cm-header-3,
+.cm-header-4, .cm-header-5, .cm-header-6 {
+  font-family: var(--madsomness-font-secondary) !important;
+  color: var(--madsomness-primary)             !important;
+}
+
+/* Code-Blöcke & Inline-Code */
+code,
+pre,
+.cm-inline-code {
+  font-family: var(--madsomness-font-mono) !important;
+  background-color: rgba(0,0,0,0.05)       !important;
+  border-radius: 3px                       !important;
+  padding: 2px 4px                         !important;
+}
+
+/* Links & Akzente */
+a {
+  color: var(--madsomness-secondary) !important;
+}
+a:hover {
+  color: var(--madsomness-primary)   !important;
+}
+
+/* Bilder responsiv */
+img {
+  max-width: 100% !important;
+  height: auto   !important;
+}
+
+/* Callout-Border-Farbe */
+.callout {
+  border-left-color: var(--madsomness-primary) !important;
+}
