@@ -1,0 +1,151 @@
+---
+import type { CollectionEntry } from 'astro:content'
+import { getCollection, render } from 'astro:content'
+import Comment from '@/components/Comment/Index.astro'
+import PostDate from '@/components/PostDate.astro'
+import TagList from '@/components/TagList.astro'
+import BackButton from '@/components/Widgets/BackButton.astro'
+import TOC from '@/components/Widgets/TOC.astro'
+import { allLocales, defaultLocale, moreLocales } from '@/config'
+import Layout from '@/layouts/Layout.astro'
+import { checkPostSlugDuplication } from '@/utils/content'
+import { getPostDescription } from '@/utils/description'
+
+export async function getStaticPaths() {
+  const tierlists = await getCollection('tierlists')
+
+  // Check if there are duplicate tierlist slugs
+  const duplicates = await checkPostSlugDuplication(tierlists)
+  if (duplicates.length > 0) {
+    throw new Error(`Duplicate tierlist slugs:\n${duplicates.join('\n')}`)
+  }
+
+  // Use a Map to store the relationship between tierlist slugs and their supported languages
+  const slugToLangsMap = tierlists.reduce((map, tierlist) => {
+    const slug = tierlist.data.abbrlink || tierlist.id
+    const lang = tierlist.data.lang
+
+    if (!map.has(slug)) {
+      map.set(slug, new Set(lang ? [lang] : allLocales))
+    }
+    else if (lang) {
+      map.get(slug)?.add(lang)
+    }
+
+    return map
+  }, new Map<string, Set<string>>())
+
+  // Convert Map<slug, Set<langs>> to Record<slug, langs[]> structure
+  const slugToLangs = Object.fromEntries(
+    Array.from(slugToLangsMap.entries()).map(([slug, langs]) => [
+      slug,
+      [...langs].sort((a, b) => allLocales.indexOf(a) - allLocales.indexOf(b)),
+    ]),
+  )
+
+  type PathItem = {
+    params: { tierlists_slug: string }
+    props: { tierlist: any, lang: string, supportedLangs: string[] }
+  }
+
+  const paths: PathItem[] = []
+
+  // Default locale
+  tierlists.forEach((tierlist: CollectionEntry<'tierlists'>) => {
+    // Show drafts in dev mode only
+    if ((import.meta.env.DEV || !tierlist.data.draft)
+      && (tierlist.data.lang === defaultLocale || tierlist.data.lang === '')) {
+      const slug = tierlist.data.abbrlink || tierlist.id
+
+      paths.push({
+        params: { tierlists_slug: `tierlists/${slug}/` },
+        props: {
+          tierlist,
+          lang: defaultLocale,
+          supportedLangs: slugToLangs[slug] ?? [],
+        },
+      })
+    }
+  })
+
+  // More locales
+  moreLocales.forEach((lang: string) => {
+    tierlists.forEach((tierlist: CollectionEntry<'tierlists'>) => {
+      // Process tierlists with matching language or no language specified
+      if ((import.meta.env.DEV || !tierlist.data.draft)
+        && (tierlist.data.lang === lang || tierlist.data.lang === '')) {
+        const slug = tierlist.data.abbrlink || tierlist.id
+        paths.push({
+          params: { tierlists_slug: `${lang}/tierlists/${slug}/` },
+          props: {
+            tierlist,
+            lang,
+            supportedLangs: slugToLangs[slug] ?? [],
+          },
+        })
+      }
+    })
+  })
+
+  return paths
+}
+
+const { tierlist, lang, supportedLangs } = Astro.props
+const description = getPostDescription(tierlist, 'meta')
+const { Content, headings, remarkPluginFrontmatter } = await render(tierlist)
+---
+
+<Layout
+  postTitle={tierlist.data.title}
+  postDescription={description}
+  postSlug={tierlist.id}
+  supportedLangs={supportedLangs}
+>
+  <article class="heti">
+    <div class="relative">
+      <!-- Go Back Button On Desktop -->
+      <BackButton />
+      <!-- Title -->
+      <h1 class="post-title">
+        <span
+          transition:name={`tierlist-${tierlist.data.abbrlink || tierlist.id}${lang ? `-${lang}` : ''}`}
+          data-disable-theme-transition
+        >
+          {tierlist.data.title}
+        </span>
+      </h1>
+    </div>
+
+    <!-- Date -->
+    <div
+      id="post-date"
+      class="mb-17.2 block c-primary font-time"
+      transition:name={`time-${tierlist.data.abbrlink || tierlist.id}${lang ? `-${lang}` : ''}`}
+      data-disable-theme-transition
+    >
+      <PostDate
+        date={tierlist.data.published}
+        updatedDate={tierlist.data.updated}
+        minutes={remarkPluginFrontmatter.minutes}
+      />
+    </div>
+    <!-- TOC -->
+    {tierlist.data.toc && <TOC headings={headings} />}
+    <!-- Content -->
+    <div id="post-content">
+      <Content />
+      <!-- Copyright -->
+      <div id="post-copyright" />
+      <!-- Tag List -->
+      {tierlist.data.tags?.length > 0 && (
+        <div class="mt-12.6 uno-decorative-line" />
+        <TagList
+          tags={tierlist.data.tags}
+          lang={lang}
+        />
+      )}
+      <!-- Comment -->
+      <Comment />
+    </div>
+  </article>
+</Layout>

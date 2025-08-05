@@ -7,6 +7,7 @@ export const ui = {
     tags: 'Schlagwörter',
     about: 'Über',
     toc: 'Inhaltsverzeichnis',
+    tierlists: 'Tier Lists',
   },
   en: {
     title: 'Retypeset',
@@ -16,5 +17,6 @@ export const ui = {
     tags: 'Tags',
     about: 'About',
     toc: 'Table of Contents',
+    tierlists: 'Tier Lists',
   },
 }

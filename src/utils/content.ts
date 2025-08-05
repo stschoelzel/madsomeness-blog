@@ -236,3 +236,57 @@ async function _getTagSupportedLangs(tag: string) {
 }
 
 export const getTagSupportedLangs = memoize(_getTagSupportedLangs)
+
+// TIERLISTS FUNCTIONS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+export type Tierlist = CollectionEntry<'tierlists'> & {
+  remarkPluginFrontmatter: {
+    minutes: number
+  }
+}
+
+/**
+ * Add metadata including reading time to a tierlist
+ */
+async function addMetaToTierlist(tierlist: CollectionEntry<'tierlists'>): Promise<Tierlist> {
+  const cacheKey = `tierlist-${tierlist.id}-${tierlist.data.lang || 'universal'}`
+
+  if (metaCache.has(cacheKey)) {
+    return {
+      ...tierlist,
+      remarkPluginFrontmatter: metaCache.get(cacheKey)!,
+    }
+  }
+
+  const { remarkPluginFrontmatter } = await render(tierlist)
+  metaCache.set(cacheKey, remarkPluginFrontmatter as { minutes: number })
+
+  return {
+    ...tierlist,
+    remarkPluginFrontmatter: metaCache.get(cacheKey)!,
+  }
+}
+
+/**
+ * Get all tierlists
+ */
+async function _getAllTierlists(lang?: string) {
+  const currentLang = lang || defaultLocale
+
+  const filteredTierlists = await getCollection(
+    'tierlists',
+    ({ data }: CollectionEntry<'tierlists'>) => {
+      // Show drafts in dev mode only
+      const shouldInclude = import.meta.env.DEV || !data.draft
+      return shouldInclude && (data.lang === currentLang || data.lang === '')
+    },
+  )
+
+  const enhancedTierlists = await Promise.all(filteredTierlists.map(addMetaToTierlist))
+
+  return enhancedTierlists.sort((a: Tierlist, b: Tierlist) =>
+    b.data.published.valueOf() - a.data.published.valueOf(),
+  )
+}
+
+export const getAllTierlists = memoize(_getAllTierlists)

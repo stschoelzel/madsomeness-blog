@@ -1,0 +1,44 @@
+---
+import PostList from '@/components/PostList.astro'
+import { defaultLocale, moreLocales } from '@/config'
+import Layout from '@/layouts/Layout.astro'
+import { getAllTierlists } from '@/utils/content'
+
+export async function getStaticPaths() {
+  type PathItem = {
+    params: { tierlists: string }
+    props: { lang: string }
+  }
+
+  const paths: PathItem[] = []
+
+  // Default locale
+  paths.push({
+    params: { tierlists: 'tierlists/' },
+    props: { lang: defaultLocale },
+  })
+
+  // More locales
+  moreLocales.forEach((lang: string) => {
+    paths.push({
+      params: { tierlists: `${lang}/tierlists/` },
+      props: { lang },
+    })
+  })
+
+  return paths
+}
+
+const { lang } = Astro.props
+const tierlists = await getAllTierlists(lang)
+---
+
+<Layout>
+  <div class="flex flex-col">
+    <h1 class="page-title">
+      {lang === 'de' ? 'Tier Lists' : 'Tier Lists'}
+    </h1>
+    <div class="mb-7.5 uno-decorative-line" />
+    <PostList posts={tierlists} lang={lang} isListPage />
+  </div>
+</Layout>
