@@ -1,0 +1,47 @@
+---
+import { getCollection, render } from 'astro:content'
+import { defaultLocale, moreLocales } from '@/config'
+import Layout from '@/layouts/Layout.astro'
+
+export async function getStaticPaths() {
+  type PathItem = {
+    params: { impressum: string }
+    props: { lang: string }
+  }
+
+  const paths: PathItem[] = []
+
+  // Default locale
+  paths.push({
+    params: { impressum: 'impressum/' },
+    props: { lang: defaultLocale },
+  })
+
+  // More locales
+  moreLocales.forEach((lang: string) => {
+    paths.push({
+      params: { impressum: `${lang}/impressum/` },
+      props: { lang },
+    })
+  })
+
+  return paths
+}
+
+const { lang } = Astro.props
+
+// Get impressum page content with different language
+const allImpressumEntries = await getCollection('about')
+const impressumEntry = allImpressumEntries.find(entry => entry.data.lang === lang)
+  ?? allImpressumEntries.find(entry => entry.data.lang === '')
+const { Content } = impressumEntry ? await render(impressumEntry) : { Content: null }
+---
+
+<Layout>
+  <!-- Decorative Line -->
+  <div class="uno-decorative-line" />
+  <!-- Impressum Page Content -->
+  <div class="heti">
+    {Content && <Content />}
+  </div>
+</Layout>

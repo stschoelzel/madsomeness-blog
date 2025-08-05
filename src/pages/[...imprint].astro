@@ -5,7 +5,7 @@ import Layout from '@/layouts/Layout.astro'
 
 export async function getStaticPaths() {
   type PathItem = {
-    params: { about: string }
+    params: { imprint: string }
     props: { lang: string }
   }
 
@@ -13,14 +13,14 @@ export async function getStaticPaths() {
 
   // Default locale
   paths.push({
-    params: { about: 'about/' },
+    params: { imprint: 'imprint/' },
     props: { lang: defaultLocale },
   })
 
   // More locales
   moreLocales.forEach((lang: string) => {
     paths.push({
-      params: { about: `${lang}/about/` },
+      params: { imprint: `${lang}/imprint/` },
       props: { lang },
     })
   })
@@ -30,17 +30,17 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.props
 
-// Get about page content with different language
-const allAboutEntries = await getCollection('about')
-const aboutEntry = allAboutEntries.find(entry => entry.data.lang === lang)
-  ?? allAboutEntries.find(entry => entry.data.lang === '')
-const { Content } = aboutEntry ? await render(aboutEntry) : { Content: null }
+// Get imprint page content with different language
+const allImprintEntries = await getCollection('imprint')
+const imprintEntry = allImprintEntries.find(entry => entry.data.lang === lang)
+  ?? allImprintEntries.find(entry => entry.data.lang === '')
+const { Content } = imprintEntry ? await render(imprintEntry) : { Content: null }
 ---
 
 <Layout>
   <!-- Decorative Line -->
   <div class="uno-decorative-line" />
-  <!-- About Page Content -->
+  <!-- Imprint Page Content -->
   <div class="heti">
     {Content && <Content />}
   </div>

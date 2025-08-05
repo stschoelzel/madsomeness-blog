@@ -27,8 +27,8 @@ export function isTagPage(path: string) {
   return isPageType(path, 'tags')
 }
 
-export function isAboutPage(path: string) {
-  return isPageType(path, 'about')
+export function isImprintPage(path: string) {
+  return isPageType(path, 'imprint')
 }
 
 export function isTierlistsPage(path: string) {
@@ -41,7 +41,7 @@ export function getPageInfo(path: string) {
   const isHome = isHomePage(path)
   const isPost = isPostPage(path)
   const isTag = isTagPage(path)
-  const isAbout = isAboutPage(path)
+  const isImprint = isImprintPage(path)
   const isTierlists = isTierlistsPage(path)
 
   return {
@@ -49,7 +49,7 @@ export function getPageInfo(path: string) {
     isHome,
     isPost,
     isTag,
-    isAbout,
+    isImprint,
     isTierlists,
     getLocalizedPath: (targetPath: string) =>
       getLocalizedPath(targetPath, currentLang),

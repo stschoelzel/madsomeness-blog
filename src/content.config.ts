@@ -3,7 +3,7 @@ import { defineCollection, z } from 'astro:content'
 import { allLocales, themeConfig } from '@/config'
 
 const posts = defineCollection({
-  loader: glob({ pattern: '{**/*.{md,mdx},!tierlists/**}', base: './src/content/posts' }),
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/posts' }),
   schema: z.object({
     // required
     title: z.string(),
@@ -28,7 +28,7 @@ const posts = defineCollection({
 })
 
 const tierlists = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/posts/tierlists' }),
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/tierlists' }),
   schema: z.object({
     // required
     title: z.string(),
@@ -52,11 +52,11 @@ const tierlists = defineCollection({
   }),
 })
 
-const about = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/about' }),
+const imprint = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/imprint' }),
   schema: z.object({
     lang: z.enum(['', ...allLocales]).optional().default(''),
   }),
 })
 
-export const collections = { posts, tierlists, about }
+export const collections = { posts, tierlists, imprint }

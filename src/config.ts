@@ -6,7 +6,7 @@ export const themeConfig: ThemeConfig = {
     // site title
     title: 'madsomeness',
     // site subtitle
-    subtitle: 'wildly mad but totally awesome',
+    subtitle: 'wildly mad, but totally awesome',
     // site description
     description: '',
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
