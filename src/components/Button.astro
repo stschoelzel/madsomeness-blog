@@ -1,7 +1,7 @@
 ---
-import LanguageSwitcherIcon from '@/assets/icons/language-switcher.svg'
 import ThemeToggleIcon from '@/assets/icons/theme-toggle.svg'
 import { moreLocales, themeConfig } from '@/config'
+import { getLangFromPath, getNextGlobalLang } from '@/i18n/lang'
 import { getNextGlobalLangPath, getNextSupportedLangPath, getTagsListLangPath } from '@/i18n/path'
 import { isPostPage, isTagPage } from '@/utils/page'
 
@@ -18,6 +18,16 @@ const { supportedLangs } = Astro.props
 const currentPath = Astro.url.pathname
 const isPost = isPostPage(currentPath)
 const isTag = isTagPage(currentPath)
+
+// Get current and next language for flag display
+const currentLang = getLangFromPath(currentPath)
+const nextLang = getNextGlobalLang(currentLang)
+
+// Map languages to flag emojis
+const languageFlags = {
+  de: '🇩🇪',
+  en: '🇺🇸',
+}
 
 // Check if there are other languages to switch
 const showLanguageSwitcher = moreLocales.length > 0
@@ -40,13 +50,11 @@ const nextUrl = isTag
     <a
       id="language-switcher"
       href={nextUrl}
-      class="aspect-square w-4 c-secondary active:scale-90 hover:c-primary"
-      aria-label="Switch website language"
+      class="aspect-square w-4 flex items-center justify-center text-2xl transition-transform active:scale-90 hover:scale-110"
+      aria-label={`Switch to ${nextLang === 'de' ? 'German' : 'English'}`}
+      title={`Switch to ${nextLang === 'de' ? 'Deutsch' : 'English'}`}
     >
-      <LanguageSwitcherIcon
-        aria-hidden="true"
-        fill="currentColor"
-      />
+      {languageFlags[nextLang as keyof typeof languageFlags] || '🌐'}
     </a>
   )}
 
