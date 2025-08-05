@@ -12,23 +12,32 @@ type Post = CollectionEntry<'posts'> & {
   }
 }
 
+type Tierlist = CollectionEntry<'tierlists'> & {
+  remarkPluginFrontmatter: {
+    minutes: number
+  }
+}
+
+type PostOrTierlist = Post | Tierlist
+
 const { posts, lang, pinned = false } = Astro.props
 const isHome = isHomePage(Astro.url.pathname)
 
 export interface Props {
-  posts: Post[]
+  posts: PostOrTierlist[]
   lang: string
   pinned?: boolean
 }
 
-function getPostPath(post: Post) {
+function getPostPath(post: PostOrTierlist) {
   const slug = post.data.abbrlink || post.id
+  const isTierlist = post.collection === 'tierlists'
 
   if (lang === defaultLocale) {
-    return `/posts/${slug}/`
+    return isTierlist ? `/tierlists/${slug}/` : `/posts/${slug}/`
   }
 
-  return `/${lang}/posts/${slug}/`
+  return isTierlist ? `/${lang}/tierlists/${slug}/` : `/${lang}/posts/${slug}/`
 }
 ---
 

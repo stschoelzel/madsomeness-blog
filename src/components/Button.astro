@@ -1,5 +1,5 @@
 ---
-import ThemeToggleIcon from '@/assets/icons/theme-toggle.svg'
+import { SunMoon } from 'lucide-astro'
 import { moreLocales, themeConfig } from '@/config'
 import { getLangFromPath, getNextGlobalLang } from '@/i18n/lang'
 import { getNextGlobalLangPath, getNextSupportedLangPath, getTagsListLangPath } from '@/i18n/path'
@@ -64,9 +64,10 @@ const nextUrl = isTag
     class="aspect-square w-4 c-secondary active:scale-90 hover:c-primary"
     aria-label="Switch light/dark theme"
   >
-    <ThemeToggleIcon
+    <SunMoon
       aria-hidden="true"
-      fill="currentColor"
+      size={16}
+      stroke="currentColor"
     />
   </button>
 </div>

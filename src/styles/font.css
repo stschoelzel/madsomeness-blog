@@ -1,3 +1,60 @@
+/* Custom Fonts */
+@font-face {
+  font-family: "Karrik";
+  src: url("/fonts/karrik_fonts-main/fonts/Web/WOFF2/Karrik-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Karrik";
+  src: url("/fonts/karrik_fonts-main/fonts/Web/WOFF2/Karrik-Italic.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Resistance";
+  src: url("/fonts/resistance-generale-master/fonts/webfonts/resistance_generale-webfont.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Illinois Mono";
+  src: url("/fonts/illinois-mono/Illinois_Mono_Regular.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Illinois Mono";
+  src: url("/fonts/illinois-mono/Illinois_Mono_Medium.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Illinois Mono";
+  src: url("/fonts/illinois-mono/Illinois_Mono_Bold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "VG5000";
+  src: url("/fonts/vg5000-master/fonts/webfonts/VG5000-Regular_web.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Snell Roundhand Static Font */
 @font-face {
   font-family: "Snell-Bold";

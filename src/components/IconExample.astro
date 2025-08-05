@@ -1,0 +1,51 @@
+---
+// Example component showing how to use Lucide icons
+import { ChevronDown, Heart, Home, Settings, Star, User } from 'lucide-astro';
+---
+
+<div class="icon-examples">
+  <h3>Lucide Icons Examples</h3>
+
+  <!-- Basic icons with default size -->
+  <div class="icon-group">
+    <Home />
+    <User />
+    <Settings />
+    <Star />
+    <Heart />
+  </div>
+
+  <!-- Icons with custom size -->
+  <div class="icon-group">
+    <Home size={24} />
+    <User size={32} />
+    <Settings size={16} />
+  </div>
+
+  <!-- Icons with custom color -->
+  <div class="icon-group">
+    <Star color="gold" />
+    <Heart color="red" />
+    <ChevronDown color="blue" />
+  </div>
+
+  <!-- Icons with CSS classes -->
+  <div class="icon-group">
+    <Home class="text-blue-500" />
+    <User class="text-green-500" />
+    <Settings class="text-purple-500" />
+  </div>
+</div>
+
+<style>
+  .icon-examples {
+    padding: 1rem;
+  }
+
+  .icon-group {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    align-items: center;
+  }
+</style>

@@ -40,10 +40,13 @@ export default defineConfig({
       caution: 'oklch(50.5% 0.213 27.518 / 0.8)', // red-700
     },
     fontFamily: {
-      title: ['Snell-Black', 'EarlySummer-Subset', 'EarlySummer', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
-      navbar: ['STIX-Italic', 'EarlySummer-Subset', 'EarlySummer', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
-      time: ['Snell-Bold', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
-      serif: ['STIX', 'EarlySummer', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+      title: ['Resistance', 'sans-serif'], // Resistance für Titel/Überschriften
+      navbar: ['Resistance', 'sans-serif'], // Resistance für Navigation
+      time: ['VG5000', 'sans-serif'], // Karrik für Zeitstempel
+      serif: ['Karrik', 'sans-serif'], // Karrik für normalen Text
+      sans: ['Karrik', 'sans-serif'], // Karrik als Standard Text-Schrift
+      mono: ['Illinois Mono', 'monospace'], // Illinois Mono für Code
+      pixel: ['VG5000', 'monospace'], // VG5000 für Pixel-Art Style
     },
   },
   rules: [

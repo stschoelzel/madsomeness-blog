@@ -29,25 +29,25 @@ export const themeConfig: ThemeConfig = {
       // primary color
       // used for title, hover, etc
       // oklch color picker: https://oklch.com/
-      primary: 'oklch(25% 0.005 298)',
+      primary: 'oklch(56.85% 0.27 334.39)', // #FF006E - Akzent (Headings, Buttons, Links)
       // secondary color
       // used for post text
-      secondary: 'oklch(40% 0.005 298)',
+      secondary: 'oklch(20% 0.02 298)', // #212121 - Fließtext (darker for readability)
       // background color
       background: 'oklch(96% 0.005 298)',
       // highlight color
       // used for navbar, selected text, etc
-      highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)', // rgba(255,235,0,0.5)
+      highlight: 'oklch(65.14% 0.19 245.77)', // #3A86FF - Sekundär-Akzent (Hover, Markierungen)
     },
     dark: {
       // primary color
-      primary: 'oklch(92% 0.005 298)',
+      primary: 'oklch(76.32% 0.20 334.39)', // #FF66A3 - Primary Dark
       // secondary color
-      secondary: 'oklch(77% 0.005 298)',
+      secondary: 'oklch(94.51% 0.02 298)', // #F1F1F1 - Content Dark
       // background color
       background: 'oklch(22% 0.005 298)',
       // highlight color
-      highlight: 'oklch(0.93 0.195089 103.2532 / 0.2)', // rgba(255,235,0,0.2)
+      highlight: 'oklch(71.78% 0.15 245.77)', // #5C9EFF - Secondary Dark
     },
   },
   // COLOR SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
