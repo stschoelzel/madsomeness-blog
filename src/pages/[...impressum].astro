@@ -31,7 +31,7 @@ export async function getStaticPaths() {
 const { lang } = Astro.props
 
 // Get impressum page content with different language
-const allImpressumEntries = await getCollection('about')
+const allImpressumEntries = await getCollection('imprint')
 const impressumEntry = allImpressumEntries.find(entry => entry.data.lang === lang)
   ?? allImpressumEntries.find(entry => entry.data.lang === '')
 const { Content } = impressumEntry ? await render(impressumEntry) : { Content: null }
